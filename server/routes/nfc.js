@@ -20,7 +20,6 @@ router.get('/link/:_id', (req, res) => {
         'nfc',
         String(result._id),
         {
-          domain: 'www.mamre.kr',
           expires: new Date(Date.now() + 9000000000),
           signed: false,
         });
